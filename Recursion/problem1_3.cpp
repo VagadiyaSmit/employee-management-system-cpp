@@ -1,10 +1,12 @@
+// power function 
 #include <iostream>
 using namespace std;
-int power(int x,int n){
+
+int power(int x,int n){   // base case   // T.C = O(log n) S.C = O(log n)
     if(n == 0){
         return 1;
     }
-    int halfPower = power(x,n/2);
+    int halfPower = power(x,n/2); //divide problem in half
     if(n%2 == 0){
         return halfPower * halfPower;
     } else{

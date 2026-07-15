@@ -6,7 +6,7 @@ struct Node{
     int data;
     Node* next;
 };
-Node* merge(Node* list1,Node* list2){
+Node* merge(Node* list1,Node* list2){     //T.C = O(n+m)   S.C = O(1)
     Node dummy;
     Node* tail = &dummy;
     dummy.next = NULL;

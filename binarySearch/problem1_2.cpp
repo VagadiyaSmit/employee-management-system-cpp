@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void firstLastOccurnce(int arr[],int n,int target){
+void firstLastOccurnce(int arr[],int n,int target){ //T.C = O(n)  S.C = O(1)
     int first = -1;
     int last= -1;
     for(int i = 0;i < n;i++){

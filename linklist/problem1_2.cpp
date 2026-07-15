@@ -1,10 +1,11 @@
+// Reverse a linklist
 #include <iostream>
 using namespace std;
 struct Node{
     int data;
     Node* next;
 };
-void traversal(struct Node* head){
+void traversal(struct Node* head){   //T.C = O(n)  S.C = O(1)
     //traverse and print
     Node* temp = head;
     while(temp != NULL){
@@ -28,7 +29,7 @@ Node* reverse(Node* head){
 
 
 int main(){
-     Node * first = new Node{1,NULL};
+    Node * first = new Node{1,NULL};
     Node * second = new Node{2,NULL};
     Node * third = new Node{3,NULL};
     Node * fourth= new Node{4,NULL};

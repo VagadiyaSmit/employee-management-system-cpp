@@ -31,6 +31,8 @@ int main(){
         {105, "raj",70000},
         {106, "veer",60000},
     };
+    cout << "\n Total Employees: " << employees.size() << endl;
+    
     sort(employees.begin(),employees.end(),[](const Employee& e1,const Employee& e2){
         return e1.salary > e2.salary;
     });                           // ,lemdas
@@ -50,11 +52,18 @@ int main(){
     double totalSalary = accumulate(employees.begin(),employees.end(),0.0,[](double sum,const Employee& e){
         return sum + e.salary;
     });
+    cout << "\n\nTotal salary of all employees: $ " << totalSalary << endl;
 
     double averageSalary = totalSalary / employees.size();
+    cout << "Average salary of all employees: $ " << averageSalary << endl;
 
     auto highestPaid = max_element(employees.begin(),employees.end(),[](const Employee& e1,const Employee& e2){
         return e1.salary < e2.salary;
     });
+    if(highestPaid != employees.end()){
+        cout << "\n\nHighest paid employee: \n";
+        displayEmployee(*highestPaid);
+    }
+
     return 0;
 }

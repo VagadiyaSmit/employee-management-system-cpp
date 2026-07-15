@@ -3,7 +3,7 @@
 
 #include <iostream>
 using namespace std;
-int factorial(int n){
+int factorial(int n){     //T.C = O(n)    S.C = O(n)
     if(n < 0){
         return -1;
     }

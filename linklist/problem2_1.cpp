@@ -1,3 +1,4 @@
+//detect a cycle
 #include <iostream>
 using namespace std;
 struct Node{
@@ -5,7 +6,7 @@ struct Node{
     Node* next;
 };
 
-bool detectCycle(Node* head){
+bool detectCycle(Node* head){  //T.C = O(n)  S.C = O(1) 
     Node* slow = head;
     Node* fast = head;
     while(fast != NULL && fast ->next != NULL){

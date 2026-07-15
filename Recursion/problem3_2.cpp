@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-void printPermutations(string &s,int i){
+void printPermutations(string &s,int i){   //T.C = O(n * n!)   S.C = O(n)
     if(i == s.length()){
         cout << s << endl;
         return;

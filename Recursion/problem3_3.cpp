@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool subsetSum(int arr[],int n,int i,int target){
+bool subsetSum(int arr[],int n,int i,int target){  // T.C = O(2^n)  S.C = O(n)
     if(target == 0){
         return true;
     }

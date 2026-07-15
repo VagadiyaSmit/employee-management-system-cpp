@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void printAllSubset(int arr[],vector <int>& ans,int i,int n,vector <vector<int>>& allSubset){
+void printAllSubset(int arr[],vector <int>& ans,int i,int n,vector <vector<int>>& allSubset){   //T.C = O(n*2^n) S.C = O(n)
     if(i == n){
         allSubset.push_back(ans);
         return;
